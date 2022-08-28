@@ -23,7 +23,7 @@ public class DataService {
     StatisticsRepository statisticsRepository;
 
     public Iterable<Statistics> getAllStats(){
-        return statisticsRepository.findAll();
+        return statisticsRepository.findAllByOrderByCountDesc();
     }
 
 }
